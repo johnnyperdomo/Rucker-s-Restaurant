@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Order Online</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1>Order Online</h1>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li class="sitemap"><a href="index.html">Home</a></li>
+                    <li class="sitemap"><a href="menu.html">Menu</a></li>
+                    <li class="sitemap">
+                        <a href="specials.html">Specials</a>
+                    </li>
+                    <li class="sitemap">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="sitemap">
+                        <a href="orderonline.html">Order Online</a>
+                    </li>
+                    <li class="info">
+                        <a href="mailto:contact@ruckers.com"
+                            >contact@ruckers.com</a
+                        >
+                    </li>
+                    <li class="info">
+                        <a href="#">(123)-456-7890</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <h1 style="text-align: center;">Order Online</h1>
+
+        <div>
+            <img
+                src="imgs/orderOnline.png"
+                alt="restaurantDiner"
+                height="150px"
+                width="150px"
+
+                style="display: block;
+                margin-left: auto;
+                margin-right: auto;"
+            />
+        </div>
+        <br>
+        <div class="center" >
+            <form style="text-align: left;">
+
+            <div>
+                <label for="dishes"> <b>Pick Dishes:</b> </label>
+                <br /> <br>
+                <label for="meat">Choose Meat</label><br>
+
+                <input type="radio" id="chicken" name="meat" value="chicken">
+                <label for="chicken">Chicken</label><br>
+                <input type="radio" id="ribs" name="meat" value="ribs">
+                <label for="ribs">Ribs</label><br>
+                <input type="radio" id="Burger" name="meat" value="Burger">
+                <label for="Burger">Burger</label><br>
+
+                <input type="checkbox" id="drink" name="drink" value="drink">
+                <label for="drink">Alcoholic Beverage</label><br>
+                <input type="checkbox" id="Soup" name="Soup" value="Soup">
+                <label for="Soup">Soup</label><br>
+                <input type="checkbox" id="salad" name="salad" value="salad">
+                <label for="salad">Salad</label><br>
+                <br>
+                <label for="instructions">Any special instructions?</label><br>
+                <textarea name="instructions" id="instructions" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required />
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="fname" required />
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" required />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+            </div>
+            <div>
+                <label for="ccn">Credit Card Number</label>
+                <input type="number" id="ccn" required />
+            </div>
+            <div>
+                <label for="ccexd">Credit Card Exp. date</label>
+                <input type="number" id="ccexd" required />
+            </div>
+            <div>
+                <label for="csv">CSV number <i>(back of card)</i> </label>
+                <input type="password" id="csv" required />
+            </div>
+
+            <div>
+                <label for="appt">Pick up time:</label>
+
+                <input
+                    type="time"
+                    id="appt"
+                    name="appt"
+                    min="11:00"
+                    max="20:00"
+                    required
+                />
+            </div>
+            <br>
+            
+            <br>
+            <button type="submit">Order</button>
+        </form></div>
+        
+    </body>
+    </body>
+</html>
